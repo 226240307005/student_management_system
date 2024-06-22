@@ -177,7 +177,7 @@ $db="student_management";
 
          if(mysqli_num_rows($check_query) == 0)
          {
-        $sql="INSERT INTO students VALUES('','$enrollment','$name','$branch','$collage','$code','$cgpa','$sem')";
+        $sql="INSERT INTO students VALUES('','$enrollment','$name','$branch','$collage','$code','$cgpa','$sem','$gender')";
         $query=mysqli_query($conn,$sql);
         echo "<br><center><div class='alert alert-success' role='alert' style='width:500px';>Student added successfully!!</div></center>";
           }
